@@ -1,0 +1,15 @@
+#welcome {
+    text-align: center;
+}
+#checkdata {
+    margin-top: 50px;
+    text-align: center;
+}
+.btn {
+    background: black;
+    color: white;
+}
+#myChart {
+    height: 500px;
+    width: 500px;
+}
