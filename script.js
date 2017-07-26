@@ -1,20 +1,18 @@
 var ctx = document.getElementById("myChart").getContext('2d');
-ctx.canvas.width = 700;
-ctx.canvas.height = 500;
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Max's PC", "Dave's Macbook", "Xbox One S", "Samsung Smart TV", "Max's iPhone", "Dave's Note 7"],
+        labels: ["Max's PC", "Adrian's Macbook", "Samsung TV", "Roku", "Samantha's iPad", "Max's iPhone"],
         datasets: [{
-            label: 'GBs Used,'
+            label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(255, 206, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(153, 102, 255, 0.5)',
+                'rgba(255, 159, 64, 0.5)'
             ],
             borderColor: [
                 'rgba(255,99,132,1)',
