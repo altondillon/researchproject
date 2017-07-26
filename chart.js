@@ -4,7 +4,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Max's PC", "Adrian's Macbook", "Samsung TV", "Roku", "Samantha's iPad", "Max's iPhone"],
         datasets: [{
-            label: '# of Votes',
+            label: 'GB\'s Used',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
