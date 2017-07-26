@@ -9,7 +9,11 @@
     background: black;
     color: white;
 }
-#myChart {
-    height: 500px;
-    width: 500px;
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
 }

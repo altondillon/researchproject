@@ -6,7 +6,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Max's PC", "Dave's Macbook", "Xbox One S", "Samsung Smart TV", "Max's iPhone", "Dave's Note 7"],
         datasets: [{
-            label: '# of Votes',
+            label: 'GBs Used,'
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -28,7 +28,6 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-        responsive: false,
         scales: {
             yAxes: [{
                 ticks: {
