@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Data Tracker</title>
+        <title>Settings</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
-    <span id="menu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
     <body>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -17,28 +15,32 @@
             <a href="#">About</a>
         </div>
         <div class="jumbotron" id="title">
-            <h1 style="padding-top: 40px;">Welcome to Data Tracker</h1>
-            <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4" id="checkdata">
-                    <a href="dataPage.html" class="btn btn-primary btn-lg" role="button">Check Data</a>
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
+            <span id="menu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+            <h1 style="padding-top: 30px;">Settings</h1>
         </div>
         <div class="row">
-            <div class="col-sm-1 col-md-2 col-lg-2"></div>
-            <div class="col-sm-10 col-md-8 col-lg-8" style="text-align: center">
-                <canvas id="myChart"></canvas>
-                <script src="fakechart.js"></script>
-                <h2 id="welcome-info">What is Data Tracker?</h2>
-                <p>
-                    Data Tracker is a web-based application designed to make monitoring your network bandwidth simple and easy.  It utilizes different visual representations of the data to make it easy for anyone to understand.
-                </p>
+            <div class="container">
+                <h2>Data Display</h2>
+                <p>Have your bandwidth data displayed differently</p>
             </div>
-            <div class="col-sm-1 col-md-2 col-lg-2"></div>
-        </div>
-
+            <div class="container">
+                <h2>Time Intervals</h2>
+                <p>Choose when you want updates on your network bandwidth data</p>
+            </div>
+            <div class="container">
+                <h2>Languages</h2>
+                <p>Choose the application's default language</p>
+            </div>
+            <div class="container">
+                <h2>Devices</h2>
+                <p>Change the name of the devices on your network, remove devices, add devices</p>
+                </div>
+                <div class="container">
+                    <h2>About</h2>
+                    <p>Information about the Data Tracker</p>
+                </div>
+            </div>
+        <script src="chart.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
