@@ -11,35 +11,37 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="dataPage.html">Data Usage</a>
-            <a href="#">Settings</a>
+            <a href="settings.html">Settings</a>
             <a href="#">About</a>
         </div>
         <div class="jumbotron" id="title">
             <span id="menu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
             <h1 style="padding-top: 30px;">Settings</h1>
         </div>
-        <div class="row">
-            <div class="container">
-                <h2>Data Display</h2>
-                <p>Have your bandwidth data displayed differently</p>
-            </div>
-            <div class="container">
+        <div class="panel-group">
+            <a href="index.html">
+                <div class="panel panel-default">
+                    <h2>Data Display</h2>
+                    <p>Have your bandwidth data displayed differently</p>
+                </div>
+            </a>
+            <div class="panel panel-default">
                 <h2>Time Intervals</h2>
                 <p>Choose when you want updates on your network bandwidth data</p>
             </div>
-            <div class="container">
+            <div class="panel panel-default">
                 <h2>Languages</h2>
                 <p>Choose the application's default language</p>
             </div>
-            <div class="container">
+            <div class="panel panel-default">
                 <h2>Devices</h2>
                 <p>Change the name of the devices on your network, remove devices, add devices</p>
-                </div>
-                <div class="container">
-                    <h2>About</h2>
-                    <p>Information about the Data Tracker</p>
-                </div>
             </div>
+            <div class="panel panel-default">
+                <h2>About</h2>
+                <p>Information about the Data Tracker</p>
+            </div>
+        </div>
         <script src="chart.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

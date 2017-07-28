@@ -8,13 +8,21 @@
     text-align: center;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #231D2B;
-  border-color: #231D2B;
+    color: #ffffff;
+    background-color: #231D2B;
+    border-color: #231D2B;
 }
 #welcome-info {
     padding-top: 50px;
 }
+.container-fluid {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.panel {
+    text-align: center;
+}
+
 /* <--------> NAVBAR CSS <--------> */
 .sidenav {
     height: 100%;
@@ -51,8 +59,8 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 #menu {
     position: absolute;

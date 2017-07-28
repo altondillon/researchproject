@@ -11,12 +11,17 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="dataPage.html">Data Usage</a>
-            <a href="#">Settings</a>
+            <a href="settings.html">Settings</a>
             <a href="#">About</a>
         </div>
         <div class="jumbotron" id="title">
             <span id="menu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
             <h1 style="padding-top: 30px;">Data Usage</h1>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h2 id="network-name"></h2>
+            </div>
         </div>
         <div class="row">
             <div class="container">
@@ -27,17 +32,20 @@
                 <div class="col-md-1"></div>
             </div>
         </div>
+        <script>
+            var networkName = "Carleton Network";
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+                document.getElementById("network-name").innerHTML = "Data on " + networkName;
+        </script>
         <script src="chart.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
 </html>

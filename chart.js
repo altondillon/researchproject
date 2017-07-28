@@ -26,12 +26,13 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+        onClick: graphClickEvent,
         responsive: true,
         maintainAspectRatio: true,
         legend: {
             display: true,
             labels: {
-        }
+            }
         },
         scales: {
             xAxes: [{
@@ -54,3 +55,19 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+function graphClickEvent(event, array){
+    var activeElement = this.getElementAtEvent(event);
+    if(activeElement.length > 0){
+        var clickedPt = activeElement[0]._index;
+
+        switch (clickedPt) {
+            case 0:
+                window.open("https://www.google.com","_self")
+                break;
+            case 1:
+                window.open("https://www.google.com","_self")
+                break;
+                         }
+
+    }
+}
