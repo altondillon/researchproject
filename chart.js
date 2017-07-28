@@ -57,17 +57,14 @@ var myChart = new Chart(ctx, {
 });
 function graphClickEvent(event, array){
     var activeElement = this.getElementAtEvent(event);
-    if(activeElement.length > 0){
-        var clickedPt = activeElement[0]._index;
+    var clickedPt = activeElement[0]._index;
+    var dataUsage = this.data.datasets[0].data[clickedPt];
+    var name = activeElement[0]._model.label;
 
-        switch (clickedPt) {
-            case 0:
-                window.open("https://www.google.com","_self")
-                break;
-            case 1:
-                window.open("https://www.google.com","_self")
-                break;
-                         }
+    if(activeElement.length > 0){
+        console.log(dataUsage);
+        console.log(name);
+        window.open("file://index.html","_self")
 
     }
 }
