@@ -8,11 +8,11 @@ var myChart = new Chart(ctx, {
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 50, 50, 0.7)',
-                'rgba(54, 162, 235, 0.5)',
-                'rgba(255, 206, 86, 0.5)',
-                'rgba(75, 192, 192, 0.5)',
-                'rgba(153, 102, 255, 0.5)',
-                'rgba(255, 159, 64, 0.5)'
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(255, 159, 64, 0.7)'
             ],
             borderColor: [
                 'rgba(255,50,50,1)',
@@ -64,7 +64,10 @@ function graphClickEvent(event, array){
     if(activeElement.length > 0){
         console.log(dataUsage);
         console.log(name);
-        window.open("file://index.html","_self")
-
+        window.open("device.html","_self");
+    } else {
+        console.log("error");
     }
+    document.getElementById("deviceName").innerHTML = name;
+    document.getElementById("dataUsage").innerHTML = dataUsage;
 }
