@@ -2,17 +2,17 @@
 <html>
     <head>
         <title>Settings</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
     </head>
     <body>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="dataPage.html">Data Usage</a>
-            <a href="settings.html">Settings</a>
-            <a href="#">About</a>
+            <a href="../index.html">Home</a>
+            <a href="/dataUsage/dataPage.html">Data Usage</a>
+            <a href="/dataUsage/settings.html">Settings</a>
+            <a href="/dataUsage/about.html">About</a>
         </div>
         <div class="jumbotron" id="title">
             <span id="menu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
@@ -25,34 +25,33 @@
                     <p>Have your bandwidth data displayed differently</p>
                 </div>
             </a>
-            <div class="panel panel-default">
+            <a href="index.html">
+                <div class="panel panel-default">
                 <h2>Time Intervals</h2>
                 <p>Choose when you want updates on your network bandwidth data</p>
             </div>
-            <div class="panel panel-default">
+            </a>
+            <a href="index.html">
+                <div class="panel panel-default">
                 <h2>Languages</h2>
                 <p>Choose the application's default language</p>
             </div>
-            <div class="panel panel-default">
+            </a>
+            <a href="index.html">
+                <div class="panel panel-default">
                 <h2>Devices</h2>
                 <p>Change the name of the devices on your network, remove devices, add devices</p>
             </div>
-            <div class="panel panel-default">
+            </a>
+            <a href="/dataUsage/about.html">
+                <div class="panel panel-default">
                 <h2>About</h2>
                 <p>Information about the Data Tracker</p>
             </div>
+            </a>
         </div>
-        <script src="chart.js"></script>
+    <script src="/js/nav.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
 </html>

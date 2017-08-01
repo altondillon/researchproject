@@ -1,5 +1,7 @@
 var name;
-var dataUsage;
+var dataTotal = {
+    dataGB: ""
+}
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -60,12 +62,14 @@ var myChart = new Chart(ctx, {
 function graphClickEvent(event, array){
     var activeElement = this.getElementAtEvent(event);
     var clickedPt = activeElement[0]._index;
-    dataUsage = myChart.data.datasets[0].data[clickedPt];
+    var dataUsage = this.data.datasets[0].data[clickedPt];
     name = activeElement[0]._model.label;
+    dataGB = dataUsage.toString();
 
     if(activeElement.length > 0){
-        console.log(dataUsage);
+        console.log(activeElement[0]);
         console.log(name);
+        console.log(dataGB);
         window.open("device.html","_self");
     } else {
         console.log("error");

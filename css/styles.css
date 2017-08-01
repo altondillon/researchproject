@@ -22,6 +22,9 @@
 .panel {
     text-align: center;
 }
+div.hide {
+    display:none;
+}
 /* <--------> NAVBAR CSS <--------> */
 .sidenav {
     height: 100%;
