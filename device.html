@@ -17,32 +17,13 @@
             <a href="#">About</a>
         </div>
         <div class="jumbotron" id="title">
-            <h1 id="deviceName" style="padding-top: 40px;"></h1>
-            <script src="chart.js"></script>
+            <h1 id="deviceName" style="padding-top: 40px;">default</h1>
+            <h1 id="dataUsage" style="padding-top: 40px;">default</h1>
         </div>
-        <div class="row">
-            <div class="col-sm-1 col-md-2 col-lg-2"></div>
-            <div class="col-sm-10 col-md-8 col-lg-8" style="text-align: center">
-                <canvas id="myChart"></canvas>
-                <script src="fakechart.js"></script>
-                <h2 id="welcome-info">What is Data Tracker?</h2>
-                <p>
-                    Data Tracker is a web-based application designed to make monitoring your network bandwidth simple and easy.  It utilizes different visual representations of the data to make it easy for anyone to understand.
-                </p>
-            </div>
-            <div class="col-sm-1 col-md-2 col-lg-2"></div>
-        </div>
-
+    <script src="chart.js"></script>
+    <script src="loadPage.js"></script>
+    <script src="nav.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
 </html>

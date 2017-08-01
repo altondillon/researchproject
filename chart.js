@@ -1,3 +1,5 @@
+var name;
+var dataUsage;
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -58,8 +60,8 @@ var myChart = new Chart(ctx, {
 function graphClickEvent(event, array){
     var activeElement = this.getElementAtEvent(event);
     var clickedPt = activeElement[0]._index;
-    var dataUsage = this.data.datasets[0].data[clickedPt];
-    var name = activeElement[0]._model.label;
+    dataUsage = myChart.data.datasets[0].data[clickedPt];
+    name = activeElement[0]._model.label;
 
     if(activeElement.length > 0){
         console.log(dataUsage);
@@ -68,6 +70,4 @@ function graphClickEvent(event, array){
     } else {
         console.log("error");
     }
-    document.getElementById("deviceName").innerHTML = name;
-    document.getElementById("dataUsage").innerHTML = dataUsage;
 }
