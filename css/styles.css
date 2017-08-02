@@ -25,6 +25,13 @@
 div.hide {
     display:none;
 }
+.cap-device-text {
+    padding-top: 25px;
+}
+.labels {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 /* <--------> NAVBAR CSS <--------> */
 .sidenav {
     height: 100%;
