@@ -1,6 +1,9 @@
 var name;
-var dataTotal = {
-    dataGB: ""
+var dataGB = [352, 340, 280, 206, 305, 173];
+var clickedPt;
+var sum = dataGB.reduce(add, 0);
+function add(a, b){
+    return a + b;
 }
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
@@ -9,7 +12,7 @@ var myChart = new Chart(ctx, {
         labels: ["Max's PC", "Adrian's Macbook", "Samsung TV", "Roku", "Samantha's iPad", "Max's iPhone"],
         datasets: [{
             label: 'GB\'s Used',
-            data: [12, 19, 3, 5, 2, 3],
+            data: dataGB,
             backgroundColor: [
                 'rgba(255, 50, 50, 0.7)',
                 'rgba(54, 162, 235, 0.7)',
@@ -62,14 +65,11 @@ var myChart = new Chart(ctx, {
 function graphClickEvent(event, array){
     var activeElement = this.getElementAtEvent(event);
     var clickedPt = activeElement[0]._index;
-    var dataUsage = this.data.datasets[0].data[clickedPt];
+    var data = dataGB[clickedPt];
     name = activeElement[0]._model.label;
-    dataGB = dataUsage.toString();
 
     if(activeElement.length > 0){
         console.log(activeElement[0]);
-        console.log(name);
-        console.log(dataGB);
         window.open("device.html","_self");
     } else {
         console.log("error");
