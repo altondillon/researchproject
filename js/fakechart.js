@@ -29,7 +29,7 @@ var myChart = new Chart(ctx, {
         responsive: true,
         maintainAspectRatio: true,
         legend: {
-            display: true,
+            display: false,
             labels: {
         }
         },
